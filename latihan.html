@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Flashcards</title>
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <!---box icon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!---remix icon link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!---google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--- header -->
+    <header>
+      <style>
+        .hasil {
+          display: none;
+          color: red;
+        }
+        .hasil:has(i) {
+          color: green;
+        }
+        .pilihan:checked ~ .hasil {
+          display: inline-block;
+        }
+      </style>
+      <a href="index.html" class="logo">
+        <img src="img/BG3.png" />
+      </a>
+      <ul class="navlist">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="belajar.html"> Colour Flashcards </a></li>
+        <li><a href="latihan.html"> Latihan </a></li>
+        <li><a href="profile.html"> Profile </a></li>
+      </ul>
+      <div class="right-content">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-img">
+        <img src="img/apel.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Apel ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Merah
+            <span class="hasil">Benar <i></i></span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Putih
+            <span class="hasil">Salah</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/pisang.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Pisang ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Merah
+            <span class="hasil">Salah</span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Kuning
+            <span class="hasil">Benar<i></i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/jeruk.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Jeruk ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Jingga
+            <span class="hasil">Benar <i></i></span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Kuning
+            <span class="hasil">Salah</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/baju.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Baju ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Biru
+            <span class="hasil">Benar <i></i></span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Jingga
+            <span class="hasil">Salah</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/awan.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Awan ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Biru
+            <span class="hasil">Salah</span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Putih
+            <span class="hasil">Benar<i></i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/semut.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Semut ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Putih
+            <span class="hasil">Salah</span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Hitam
+            <span class="hasil">Benar<i></i></span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/anggur.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Anggur ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Ungu
+            <span class="hasil">Benar <i></i></span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Hitam
+            <span class="hasil">Salah</span>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img">
+        <img src="img/daun.png" />
+      </div>
+      <div class="text">
+        <h1 class="pertanyaan">Daun ini berwarna apa ?</h1>
+        <ul class="jawaban">
+          <li>
+            <input
+              type="radio"
+              onclick="audio.play();"
+              class="pilihan"
+              name="soal1"
+            />Hijau
+            <span class="hasil">Benar <i></i></span>
+          </li>
+          <li>
+            <input
+              type="radio"
+              onclick="audio1.play();"
+              class="pilihan"
+              name="soal1"
+            />Ungu
+            <span class="hasil">Salah</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="icons"></div>
+    <!--- js link -->
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = "audio/benar.mp3";
+    </script>
+    <script type="text/javascript">
+      const audio1 = new Audio();
+      audio1.src = "audio/salah.mp3";
+    </script>
+    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
+  </body>
+</html>

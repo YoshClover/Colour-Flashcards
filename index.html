@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Flashcards</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!---box icon -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!---remix icon link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!---google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--- header -->
+    <header>
+      <a href="index.html" class="logo">
+        <img src="img/BG3.png" />
+      </a>
+      <ul class="navlist">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="belajar.html"> Colour Flashcards </a></li>
+        <li><a href="latihan.html"> Latihan </a></li>
+        <li><a href="profile.html"> Profile </a></li>
+      </ul>
+      <div class="right-content">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-text">
+        <h5 data-aos="fade-right" data-aos-duration="1400">
+          #Belajar Mengenal Warna
+        </h5>
+        <h1
+          data-aos="zoom-in-left"
+          data-aos-duration="1400"
+          data-aos-delay="300"
+        >
+          Colour Flashcards
+        </h1>
+
+        <div
+          class="main-hero"
+          data-aos="flip-down"
+          data-aos-duration="1400"
+          data-aos-delay="400"
+        >
+          <a href="belajar.html" class="btn" onclick="audio.play();">
+            Ayo Mengenal Warna!!!</a
+          >
+          <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "audio/red.mp3";
+          </script>
+        </div>
+      </div>
+      <div
+        class="hero-img"
+        class="main-hero"
+        data-aos="zoom-in"
+        data-aos-duration="1400"
+      >
+        <img src="img/bocil.png" />
+      </div>
+    </section>
+    <div class="icons"></div>
+    <!--- js link -->
+    <script src="js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
+  </body>
+</html>
